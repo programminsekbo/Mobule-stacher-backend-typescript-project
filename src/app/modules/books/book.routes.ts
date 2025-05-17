@@ -1,8 +1,17 @@
 import express from "express";
-import { getAllBooks } from "./book.controllers";
+import { createPost, getAllBooks } from "./book.controllers";
 
 const router = express.Router();
 
 router.get("/", getAllBooks);
+router.get("/",createPost)
+
+
+
+
+
+
+
+
 
 export const BookRoutes = router;
